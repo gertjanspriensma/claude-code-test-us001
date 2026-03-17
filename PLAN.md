@@ -14,8 +14,9 @@ Create `test_calculator.py` covering:
 - Error handling (divide by zero raises `ValueError`)
 
 ## Step 3: Run & Verify
-Execute the test suite to confirm all tests pass:
+Install the test dependency and execute the test suite:
 ```bash
-python -m pytest test_calculator.py -v
+python3 -m pip install -r requirements-dev.txt
+python3 -m pytest test_calculator.py -v
 ```
 Expected output: 5 tests collected, 5 passed.
