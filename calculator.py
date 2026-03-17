@@ -1,19 +1,20 @@
 """Simple calculator module - Step 1: Implement the feature."""
+from __future__ import annotations
 
 
-def add(a: float, b: float) -> float:
+def add(a: int | float, b: int | float) -> int | float:
     return a + b
 
 
-def subtract(a: float, b: float) -> float:
+def subtract(a: int | float, b: int | float) -> int | float:
     return a - b
 
 
-def multiply(a: float, b: float) -> float:
+def multiply(a: int | float, b: int | float) -> int | float:
     return a * b
 
 
-def divide(a: float, b: float) -> float:
+def divide(a: int | float, b: int | float) -> int | float:
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b

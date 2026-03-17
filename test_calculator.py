@@ -24,7 +24,8 @@ def test_multiply():
 
 def test_divide():
     assert divide(10, 2) == 5
-    assert divide(7, 2) == 3.5
+    assert divide(7, 2) == pytest.approx(3.5)
+    assert divide(1, 3) == pytest.approx(1 / 3)
     assert divide(-6, 3) == -2
 
 
